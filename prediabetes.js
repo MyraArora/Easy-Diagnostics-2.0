@@ -158,7 +158,7 @@ sendBtn.addEventListener("click", async () => {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": `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`,
+                "Authorization": `Bearer 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`,
             },
             body: JSON.stringify({
                 model: "gpt-3.5-turbo",
