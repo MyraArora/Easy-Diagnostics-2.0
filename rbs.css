@@ -1,0 +1,159 @@
+/* Import DM Sans font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* General body styling */
+body {
+    font-family: 'DM Sans', sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #0077b6;
+    padding: 1rem 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0077b6;
+}
+
+.header .nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 1rem;
+    font-weight: 500;
+}
+
+.header .nav a:hover {
+    color: #ff6f00;
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #033163;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Label styling */
+label {
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* Input styling */
+input[type="file"] {
+    display: block;
+    margin: 10px 0 20px;
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Result value styling */
+#resultValue {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #0056b3;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Feedback styling */
+#feedback {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #0077b6;
+    margin: 20px 0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e0f7fa;
+}
+
+/* Button styling */
+button {
+    display: none;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    background-color: #ff9c1b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    width: fit-content;
+    font-family: 'DM Sans', sans-serif;
+}
+
+button:hover {
+    background-color: #0077b6;
+}
+
+/* Utility classes for error feedback */
+.error {
+    color: #0077b6;
+    font-size: 1.1em;
+    text-align: center;
+    margin: 20px 0;
+    background-color: #e0f7fa;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.success {
+    color: #28a745;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    input[type="file"] {
+        font-size: 0.9em;
+    }
+
+    #resultValue {
+        font-size: 1.2em;
+    }
+
+    #feedback {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}

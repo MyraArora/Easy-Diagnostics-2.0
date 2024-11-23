@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: black;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #0077b6;
+    padding: 1rem 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0077b6;
+}
+
+.header .nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 1rem;
+    font-weight: 500;
+}
+
+.header .nav a:hover {
+    color: #ff6f00;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #e0f7fa;
+    color: black;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff6f00;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.cta-button:hover {
+    background-color: #ff8f3d;
+}
+
+/* About Section */
+.about {
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.about h3 {
+    font-size: 2rem;
+    color: #0077b6;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Features Section */
+.features {
+    padding: 2rem 1rem;
+    background-color: #f1faff;
+}
+
+.features h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: #0077b6;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+.feature-item {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin: 1rem;
+    flex: 0 0 30%;
+    text-align: center;
+}
+
+.feature-item h4 {
+    color: #ff6f00;
+}
+
+.feature-item p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #0077b6;
+    color: white;
+}

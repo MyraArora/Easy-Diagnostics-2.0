@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Report</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Easy Diagnostics</h1>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <div class="container">
+                <h2>Select Your Diagnostic Report</h2>
+                <p>Choose the report you'd like to analyze:</p>
+                <div class="search-bar">
+                    <label for="reports" class="search-label">Choose your report:</label>
+                    <select id="reports" class="dropdown">
+                        <option value="" disabled selected>-- Select a Report --</option>
+                        <option value="rbs">Random Blood Sugar</option>
+                        <option value="fbs">Fasting Blood Sugar</option>
+                        <option value="hba1c">HBA1C</option>
+                        <option value="haem">Haemoglobin</option>
+                        <option value="vitd">Vitamin D</option>
+                        <option value="vitb">Vitamin B12</option>
+                        <option value="vidal">Vidal</option>
+                        <option value="uric">Uric Acid</option>
+                    </select>
+                </div>
+                <button class="go-button" onclick="navigateToReport()">GO</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Easy Diagnostics. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function navigateToReport() {
+            const selectedReport = document.getElementById('reports').value;
+            if (selectedReport) {
+                window.location.href = `${selectedReport}.html`;
+            } else {
+                alert('Please select a report first.');
+            }
+        }
+    </script>
+</body>
+
+</html>
